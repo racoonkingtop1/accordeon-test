@@ -1,6 +1,5 @@
 const answers = document.querySelectorAll(`.answer`);
 
-
 for(i=0;i<answers.length;i++) {
     let answer = answers[i];
     let topof = answer.querySelector(`.topof`);
@@ -14,7 +13,7 @@ for(i=0;i<answers.length;i++) {
             });
             answer.classList.remove(`answer-closed`)
             plus.classList.add(`rotation`)
-        } else {
+        } else if (!answer.classList.contains(`answer-closed`)){
             answers.forEach(answer => {
                 answer.classList.add(`answer-closed`)
                 answer.querySelector(`.plusimg`).classList.remove(`rotation`)
