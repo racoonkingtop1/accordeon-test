@@ -33,7 +33,7 @@ h3, p {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding: 3.3vw 2% 3.3vw 0;
+    padding: 40px 2% 40px 0;
     overflow: hidden;
     transition: ease-in-out 0.2s;
     max-height: 100vw;
@@ -111,6 +111,13 @@ h3, p {
 }
 
 /*  */
+
+
+@media (max-width: 1200px) {
+    .answer {
+        padding: 3.3vw 2% 3.3vw 0;
+    }
+}
 
 @media (max-width: 800px) {
     h3 {
